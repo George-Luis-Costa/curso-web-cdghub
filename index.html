@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Pagina de Login</title>
-  </head>
-  <body>
-    <div id="background">
-      <div id="form-card">
-        <img src="./logo.png" id="logo" />  
-        
-        <form id="form-email" onsubmit="">
-          <h1 id="title">Mini Curso Tela de Login </h1>
-          <label for="email"
-            >Email:
-            <input type="email" name="email" id="email" />
-          </label>
 
-          <label for="senha"
-            >Senha:
-            <input type="password" name="senha" id="senha" />
-          </label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="/index.js" defer></script>
+  <title>Pagina de Login</title>
+</head>
 
-          <input type="submit" value="Entrar" class="button-submit" />
-        </form>
-      </div>
+<body>
+  <div id="background">
+    <div id="form-card">
+      <img src="./img/logo.png" id="logo" />
+
+      <form id="form-email" onsubmit="">
+        <h1 id="title">Mini Curso Tela de Login </h1>
+        <label for="email">Email:
+          <input type="email" name="email" id="email" placeholder="Seu email ..." />
+        </label>
+
+        <label for="senha">Senha:
+          <input type="password" name="senha" id="senha" placeholder="Sua senha ..." />
+        </label>
+
+        <input type="submit" value="Entrar" class="button-submit" onclick="logar()" />
+      </form>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
